@@ -1,0 +1,129 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="author" content="Shades Spa"/>
+    <meta name="description" content="Shades Spa"/>
+    <meta name="keywords"
+          content="Beauty, Salon, Beauty Parlour, Nails, Manicure, Pedicure, Care, Health, Massage">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!-- SITE TITLE -->
+    <title>Shades Spa</title>
+
+    <!-- FAVICON AND TOUCH ICONS -->
+    <link rel="shortcut icon" href="{{ asset('assets/images/favicon.ico') }}" type="image/x-icon">
+    <link rel="icon" href="{{ asset('assets/images/favicon.ico') }}" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ asset('assets/images/apple-touch-icon-152x152.png') }}">
+    <link rel="apple-touch-icon" sizes="120x120" href=" {{ asset('assets/images/apple-touch-icon-120x120.png') }}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ asset('assets/images/apple-touch-icon-76x76.png') }}">
+    <link rel="apple-touch-icon" href="{{ asset('assets/images/apple-touch-icon.png') }}">
+    <link rel="icon" href="{{ asset('assets/images/apple-touch-icon.png') }}" type="image/x-icon">
+
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@300;400;500;700;800&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap"
+          rel="stylesheet">
+
+    <!-- BOOTSTRAP CSS -->
+    <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet">
+
+    <!-- FONT ICONS -->
+    <link href="{{ asset('assets/css/flaticon.css') }}" rel="stylesheet">
+
+    <!-- PLUGINS STYLESHEET -->
+    <link href="{{ asset('assets/css/menu.css') }}" rel="stylesheet">
+    <link id="effect" href="{{ asset('assets/css/dropdown-effects/fade-down.css') }}" media="all" rel="stylesheet">
+    <link href="{{ asset('assets/css/magnific-popup.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/flexslider.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/owl.carousel.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/owl.theme.default.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/datetimepicker.min.css') }}" rel="stylesheet">
+
+    <!-- TEMPLATE CSS -->
+    <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
+
+    <!-- ON SCROLL ANIMATION -->
+    <link href="{{  asset('assets/css/animate.css') }}" rel="stylesheet">
+
+    <!-- RESPONSIVE CSS -->
+    <link href="{{ asset('assets/css/responsive.css') }}" rel="stylesheet">
+
+    <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet" />
+</head>
+<div id="loading" class="violet-red-loading">
+    <div id="loading-center">
+        <div class="spinner">
+            <div class="blob top"></div>
+            <div class="blob bottom"></div>
+            <div class="blob left"></div>
+            <div class="blob move-blob"></div>
+        </div>
+    </div>
+</div>
+<!-- NAVIGATION MENU -->
+<div class="wsmainfull menu clearfix">
+    <div class="wsmainwp clearfix">
+
+        <!-- HEADER LOGO -->
+        <div class="desktoplogo"><a href="/" class="logo-black"><img src="{{ asset('assets/images/icons/SHADES.png') }}" alt="header-logo"></a></div>
+        <!-- MAIN MENU -->
+        <nav class="wsmenu clearfix">
+            <ul class="wsmenu-list">
+                <!-- DROPDOWN MENU -->
+                <li class="nl-simple" aria-haspopup="true"><a href="/">Home</a></li>
+                <li aria-haspopup="true"><a href="#">About <span class="wsarrow"></span></a>
+                    <ul class="sub-menu">
+                        <li aria-haspopup="true"><a href="#about-3a">About Studio</a></li>
+                        <li aria-haspopup="true"><a href="#promo-2">Our Promotions</a></li>
+                        <li aria-haspopup="true"><a href="#about-10">Best Experience</a></li>
+                        <li aria-haspopup="true"><a href="#reviews-1">Testimonials</a></li>
+                        <li aria-haspopup="true"><a href="#gallery-4">Our Gallery</a></li>
+                    </ul>
+                </li>
+                <!-- DROPDOWN MENU -->
+                <li aria-haspopup="true"><a href="#">Pages <span class="wsarrow"></span></a>
+                    <div class="wsmegamenu clearfix halfmenu">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <!-- Links -->
+                                <ul class="col-lg-6 link-list">
+                                    <li><a href="{{ url('about') }}">About Us</a></li>
+                                    <li><a href="{{ url('price') }}">Services & Prices</a></li>
+{#                                    <li><a href="{{ url('gallery') }}">Gallery Page</a></li>#}
+{#                                    <li><a href="{{ url('gift') }}">Gift Cards</a></li>#}
+{#                                    <li><a href="{{ url('team') }}">Artists + Staff</a></li>#}
+                                </ul>
+                                <!-- Links -->
+                                <ul class="col-lg-6 link-list">
+{#                                    <li><a href="faqs.html">FAQs Page</a></li>#}
+{#                                    <li><a href="blog-listing.html">Blog Listing</a></li>#}
+{#                                    <li><a href="single-post.html">Single Blog Post</a></li>#}
+{#                                    <li><a href="booking.html">Booking Page</a></li>#}
+{#                                    <li><a href="contacts.html">Contact Us</a></li>#}
+{#                                    <li><a href="location.html">Our Locations</a></li>#}
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                </li>    <!-- END DROPDOWN MENU -->
+
+                <!-- SIMPLE NAVIGATION LINK -->
+                <li class="nl-simple" aria-haspopup="true"><a href="#pricing-3">Menu</a></li>
+                <li class="nl-simple" aria-haspopup="true"><a href="#gallery-2">Gallery</a></li>
+                <!-- SIMPLE NAVIGATION LINK -->
+{#                <li class="nl-simple" aria-haspopup="true"><a href="booking.html">Booking</a></li>#}
+
+                <!-- SIMPLE NAVIGATION LINK -->
+{#                <li class="nl-simple" aria-haspopup="true"><a href="#blog-1">Blog</a></li>#}
+
+                <!-- HEADER BUTTON -->
+                <li class="nl-simple" aria-haspopup="true">
+                    <a href="#footer-3" class="btn violet-red--btn tra-black--hover last-link">Contacts</a>
+                </li>
+            </ul>
+        </nav>    <!-- END MAIN MENU -->
+    </div>
+</div>
+<!-- END NAVIGATION MENU -->
