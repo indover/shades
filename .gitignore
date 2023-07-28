@@ -8,6 +8,10 @@
 /var/
 /vendor/
 ###< symfony/framework-bundle ###
+.idea
+composer.lock
+.env
+.env.test
 
 ###> phpunit/phpunit ###
 /phpunit.xml
