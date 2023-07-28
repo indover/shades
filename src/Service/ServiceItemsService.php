@@ -25,11 +25,6 @@ class ServiceItemsService
         foreach ($items as $item) {
             $array[$item['service_name']][] = $item;
         }
-        dd($array);
-
-//        if (count($array[$item]['service_name']) > 3) {
-//            $array[$item['service_name']][] = array_slice($array[$item]['service_name'], 0, 3);
-//        }
 
         return $array;
     }
