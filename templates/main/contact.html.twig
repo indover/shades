@@ -1,0 +1,91 @@
+{% include '@Twig/include/header.html.twig' %}
+<section id="contacts-2" class="wide-50 contacts-section division">
+    <div class="container">
+        <!-- CONTACTS-2 WRAPPER -->
+        <div class="contacts-2-wrapper">
+            <!-- CONTACT INFO & MAP -->
+            <div class="row d-flex align-items-center">
+                <!-- HOURS & LOCATION -->
+                <div class="col-md-5">
+                    <!-- WORKING HOURS -->
+                    <div class="cbox-2 mb-40">
+                        <!-- Title -->
+                        <h5 class="h5-lg">Salon Hours:</h5>
+                        <!-- Text -->
+                        <p class="p-lg">Monday: <span>11:00AM - 7:00PM</span></p>
+                        <p class="p-lg">Tue - Wed: <span>10:00AM - 9:00PM</span></p>
+                        <p class="p-lg">Thursday: <span>10:00AM - 7:30PM</span></p>
+                        <p class="p-lg">Friday: <span>10:00AM - 9:00PM</span></p>
+                        <p class="p-lg">Saturday: <span>10:00AM - 6:30PM</span></p>
+                        <p class="p-lg">Sunday: <span>11:00PM - 5:00PM</span></p>
+                    </div>
+                    <!-- LOCATION -->
+                    <div class="cbox-2 mb-40">
+                        <!-- Title -->
+                        <h5 class="h5-lg">Our Location:</h5>
+                        <!-- Title -->
+                        <p class="p-lg"> 101 -335, Wesley Street</p>
+                        <p class="p-lg"> Nanaimo, BC, Canada</p>
+                        <!-- Text -->
+                        <p class="p-lg"><a href="tel:123456789">+1 250 754 64 14</a></p>
+                        <p class="p-lg"><a href="mailto:yourdomain@mail.com">bonnie.swackhamer@gmail.com</a></p>
+                    </div>
+                </div>    <!-- END HOURS & LOCATION -->
+                <!-- GOOGLE MAP -->
+                <div class="col-md-7">
+                    <div class="google-map mb-40">
+{#                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2608.890076263456!2d-123.94368102225775!3d49.16469467137533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5488a3e2f04e1769%3A0xc2181d4d28e8fcad!2s335%20Wesley%20St%2C%20Nanaimo%2C%20BC%20V9R%202T5!5e0!3m2!1suk!2sca!4v1690502356925!5m2!1suk!2sca" width="600" height="450" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allow="encrypted-media"></iframe>#}
+                    </div>
+                </div>    <!-- END GOOGLE MAP -->
+            </div>    <!-- END CONTACT INFO & MAP -->
+            <!-- CONTACT FORM -->
+            <div class="row">
+                <!-- SECTION TITLE -->
+                <div class="row justify-content-center">
+                    <div class="col-lg-10 col-xl-8">
+                        <div class="section-title title-01 mb-60">
+                            <!-- Section ID -->
+                            <span class="section-id">Online Enquiry</span>
+                            <!-- Title -->
+                            <h2 class="h2-md">Let's Get In Touch</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="form-holder mb-40">
+                        <form name="contactform" class="row contact-form">
+                            <!-- Form Input -->
+                            <div class="col-lg-6">
+                                <input type="text" name="name" class="form-control name" placeholder="Your Name*">
+                            </div>
+                            <!-- Form Input -->
+                            <div class="col-lg-6">
+                                <input type="email" name="email" class="form-control email"
+                                       placeholder="Email Address*">
+                            </div>
+                            <!-- Form Input -->
+                            <div class="col-md-12">
+                                <input type="text" name="subject" class="form-control subject"
+                                       placeholder="What's this about?">
+                            </div>
+                            <!-- Form Textarea -->
+                            <div class="col-md-12">
+                                <textarea name="message" class="form-control message" rows="6"
+                                          placeholder="Your Message ..."></textarea>
+                            </div>
+                            <!-- Form Button -->
+                            <div class="col-md-12 mt-15 text-end">
+{#                                <button type="submit" class="btn rose--btn tra-black--hover submit">Send Message</button>#}
+                            </div>
+                            <!-- Form Message -->
+                            <div class="col-md-12 contact-form-msg text-center">
+                                <div class="sending-msg"><span class="loading"></span></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>      <!-- END CONTACT FORM -->
+        </div>    <!-- END CONTACTS-2 WRAPPER -->
+    </div>       <!-- End container -->
+</section>    <!-- END CONTACTS-2 -->
+{% include '@Twig/include/footer.html.twig' %}
