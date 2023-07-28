@@ -72,15 +72,17 @@
             <ul class="wsmenu-list">
                 <!-- DROPDOWN MENU -->
                 <li class="nl-simple" aria-haspopup="true"><a href="/">Home</a></li>
+                {% if (app.request.get('_route') is same as ('index')) %}
                 <li aria-haspopup="true"><a href="#">About <span class="wsarrow"></span></a>
                     <ul class="sub-menu">
                         <li aria-haspopup="true"><a href="#about-3a">About Studio</a></li>
-                        <li aria-haspopup="true"><a href="#promo-2">Our Promotions</a></li>
-                        <li aria-haspopup="true"><a href="#about-10">Best Experience</a></li>
-                        <li aria-haspopup="true"><a href="#reviews-1">Testimonials</a></li>
+                        <li aria-haspopup="true"><a href="#pricing-6">Our Promotions</a></li>
                         <li aria-haspopup="true"><a href="#gallery-4">Our Gallery</a></li>
+                        <li aria-haspopup="true"><a href="#footer-3">Contact Us</a></li>
                     </ul>
                 </li>
+                {% endif %}
+
                 <!-- DROPDOWN MENU -->
                 <li aria-haspopup="true"><a href="#">Pages <span class="wsarrow"></span></a>
                     <div class="wsmegamenu clearfix halfmenu">
@@ -110,8 +112,7 @@
                 </li>    <!-- END DROPDOWN MENU -->
 
                 <!-- SIMPLE NAVIGATION LINK -->
-                <li class="nl-simple" aria-haspopup="true"><a href="#pricing-3">Menu</a></li>
-                <li class="nl-simple" aria-haspopup="true"><a href="#gallery-2">Gallery</a></li>
+                <li class="nl-simple" aria-haspopup="true"><a href="{{ url('gallery') }}">Gallery</a></li>
                 <!-- SIMPLE NAVIGATION LINK -->
 {#                <li class="nl-simple" aria-haspopup="true"><a href="booking.html">Booking</a></li>#}
 
@@ -120,7 +121,7 @@
 
                 <!-- HEADER BUTTON -->
                 <li class="nl-simple" aria-haspopup="true">
-                    <a href="#footer-3" class="btn violet-red--btn tra-black--hover last-link">Contacts</a>
+                    <a href="{{ url('contact') }}" class="btn violet-red--btn tra-black--hover last-link">Contacts</a>
                 </li>
             </ul>
         </nav>    <!-- END MAIN MENU -->
