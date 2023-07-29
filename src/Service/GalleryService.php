@@ -4,7 +4,7 @@ namespace App\Service;
 
 use App\Repository\GalleryRepository;
 
-readonly class GalleryService
+class GalleryService
 {
     public function __construct(
         private GalleryRepository $galleryRepository
