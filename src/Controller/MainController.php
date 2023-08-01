@@ -3,8 +3,10 @@
 namespace App\Controller;
 
 use App\Service\GalleryService;
+use App\Service\PromotionService;
 use App\Service\ServiceItemsService;
 use App\Service\ServiceService;
+use Doctrine\ORM\NonUniqueResultException;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
@@ -14,17 +16,22 @@ class MainController extends AbstractController
     public function __construct(
         private ServiceService $service,
         private ServiceItemsService $itemsService,
-        private GalleryService $galleryService
+        private GalleryService $galleryService,
+        private PromotionService $promotionService
     )
     {
     }
 
+    /**
+     * @throws NonUniqueResultException
+     */
     #[Route('/', name: 'index')]
     public function index(): Response
     {
         return $this->render('@Twig/main/index.html.twig', [
             'items' => $this->itemsService->getAndGroupItems(),
-            'images' => $this->galleryService->getImages(6)
+            'images' => $this->galleryService->getImages(6),
+            'promotion' => $this->promotionService->getPromotion(),
         ]);
     }
 

@@ -1,0 +1,24 @@
+
+{% if promotion is defined and promotion is not null%}
+<!-- BANNER-3
+    ============================================= -->
+<section id="banner-3" class="bg-fixed banner-section division">
+    <div class="container">
+        <div class="row">
+            <!-- BANNER TEXT -->
+            <div class="col-md-7 col-lg-6">
+                <div class="banner-3-txt text-center">
+                    <!-- Title -->
+                    <h5 class="h5-md">{{ promotion.title }}</h5>
+                    <h2>{{ promotion.discount}} OFF</h2>
+                    <h4 class="h4-xs">{{ promotion.service }}</h4>
+                    <!-- Button -->
+                    {#                        <a href="booking.html" class="btn violet-red--btn tra-black--hover">Booking Online</a>#}
+                    <!-- Small Text -->
+                    <p class="mt-20">* {{ promotion.period }}</p>
+                </div>
+            </div>    <!-- END BANNER TEXT -->
+        </div>    <!-- End row -->
+    </div>       <!-- End container -->
+</section>    <!-- END BANNER-3 -->
+{% endif %}

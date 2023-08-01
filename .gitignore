@@ -5,10 +5,12 @@
 /.env.*.local
 /config/secrets/prod/prod.decrypt.private.php
 /public/bundles/
+/public/folder/*
 /var/
 /vendor/
 ###< symfony/framework-bundle ###
 .idea
+.idea/*
 composer.lock
 .env
 .env.test
@@ -22,6 +24,8 @@ composer.lock
 .phpunit.result.cache
 /phpunit.xml
 ###< symfony/phpunit-bridge ###
+
+
 
 ###> symfony/webpack-encore-bundle ###
 /node_modules/
