@@ -3,6 +3,7 @@
 namespace App\Controller\Admin;
 
 use App\Entity\Gallery;
+use App\Entity\Promotion;
 use App\Entity\Service;
 use App\Entity\ServiceItem;
 use EasyCorp\Bundle\EasyAdminBundle\Config\Dashboard;
@@ -33,5 +34,6 @@ class DashboardController extends AbstractDashboardController
         yield MenuItem::linkToCrud('Service', 'fa-regular fa-envelope-open', Service::class);
         yield MenuItem::linkToCrud('Item', 'fas fa-list', ServiceItem::class);
         yield MenuItem::linkToCrud('Gallery', 'fa-regular fa-images', Gallery::class);
+        yield MenuItem::linkToCrud('Promotion', 'fa-regular fa-percent', Promotion::class);
     }
 }
