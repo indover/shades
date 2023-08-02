@@ -11,9 +11,6 @@
 <body>
 {% include '@Twig/include/header.html.twig' %}
 
-<!-- PRELOADER SPINNER
-============================================= -->
-
 <!-- PAGE CONTENT
 ============================================= -->
 <div id="page" class="page">
@@ -39,11 +36,9 @@
                 <div class="col-md-8 col-lg-6">
                     <div class="hero-9-txt">
                         <!-- Title -->
-                        <h2>Best Nails For Best Moments</h2>
+                        <h2 style="color: white">Best Relax Spa zone</h2>
                         <!-- Text -->
-                        <p class="p-title-md">Feugiat primis and ligula laoreet auctor undo mauris auctor laoreet purus
-                            pretium a
-                            sapien euismod
+                        <p class="p-title-md" style="color: white">Relax and make shine with us
                         </p>
                         <!-- Button -->
                         <a href="#about-4" class="btn violet-red--btn tra-black--hover">Find Out More</a>
@@ -64,12 +59,13 @@
                         <div id="sb-2-1" class="sbox-2 mb-40 wow fadeInUp" data-wow-delay="0.3s">
                             <!-- Icon -->
                             <div class="sbox-ico ico-95 black--color">
-                                <span class="flaticon-pedicure-1"></span>
+                                <img src="{{ asset('assets/images/icons/manicure.png') }}" alt="">
                             </div>
                             <!-- Title -->
                             <h5 class="h5-lg">Nail Care</h5>
                             <!-- Text -->
-                            <p class="p-lg">Ligula risus auctor tempus and dolor vitae undo purus semper sodales</p>
+                            <p class="p-lg">invite you to the Nail Care procedure, where your nails get a royal look and
+                                shine with health and beauty.</p>
                             <!-- Link -->
                             <p class="tra-link mt-20"><a href="{{ url('price') }}">Find Out More</a></p>
                         </div>
@@ -79,13 +75,14 @@
                         <div id="sb-2-2" class="sbox-2 mb-40 wow fadeInUp" data-wow-delay="0.6s">
                             <!-- Icon -->
                             <div class="sbox-ico ico-95 black--color">
-                                {#                                <span class="flaticon-nail-polish-6"></span> #}
                                 <img src="{{ asset('assets/images/icons/pedicure.png') }}" alt="">
                             </div>
                             <!-- Title -->
-                            <h5 class="h5-lg">Nail Art</h5>
+                            <h5 class="h5-lg">Pedicure</h5>
                             <!-- Text -->
-                            <p class="p-lg">Ligula risus auctor tempus and dolor vitae undo purus semper sodales</p>
+                            <p class="p-lg">Treat your feet to a blissful experience, as our skilled professionals
+                                soothe, exfoliate, and beautify your tired feet, leaving them feeling refreshed and
+                                looking stunning.</p>
                             <!-- Link -->
                             <p class="tra-link mt-20"><a href="{{ url('price') }}">Find Out More</a></p>
                         </div>
@@ -95,13 +92,14 @@
                         <div id="sb-2-3" class="sbox-2 mb-40 wow fadeInUp" data-wow-delay="0.9s">
                             <!-- Icon -->
                             <div class="sbox-ico ico-95 black--color">
-                                {#                                <span class="flaticon-"></span> #}
                                 <img src="{{ asset('assets/images/icons/massage.png') }}" alt="">
                             </div>
                             <!-- Title -->
-                            <h5 class="h5-lg">Add-Ons</h5>
+                            <h5 class="h5-lg">Massage</h5>
                             <!-- Text -->
-                            <p class="p-lg">Ligula risus auctor tempus and dolor vitae undo purus semper sodales</p>
+                            <p class="p-lg">Immerse yourself in pure relaxation as our expert therapists melt away
+                                tension and stress through a personalized massage, restoring balance and harmony to your
+                                body and mind</p>
                             <!-- Link -->
                             <p class="tra-link mt-20"><a href="{{ url('price') }}">Find Out More</a></p>
                         </div>
@@ -118,7 +116,7 @@
                 <!-- IMAGE BLOCK -->
                 <div class="col-md-5 col-lg-6 order-last order-md-2">
                     <div class="img-block left-column wow fadeInRight">
-                        <img class="img-fluid" src="/assets/images/700x700_1.jpg" alt="about-image">
+                        <img class="img-fluid" src="{{ asset('assets/images/700x700_1.jpg') }}" alt="about-image">
                     </div>
                 </div>
                 <!-- TEXT BLOCK -->
@@ -127,7 +125,7 @@
                         <!-- Section ID -->
                         <div class="section-id">Get Your Shine On</div>
                         <!-- Title -->
-                        <h3 class="h3-md">Choose the Glamour</h3>
+                        <h3 class="h3-md">Choose Us</h3>
                         <!-- Text -->
                         <p class="p-lg">Shades Wellness Spa is a pioneering European Spa in Nanaimo, with a remarkable
                             journey spanning from 1995 to the present. We take immense pride in being the first spa in
@@ -136,21 +134,6 @@
                             Shower and Hydrotherapy Tub, featuring underwater lymphatic massage and rejuvenating seaweed
                             baths.
                         </p>
-                        <!-- List -->
-{#                        <ul class="simple-list">#}
-{#                            <li class="list-item">#}
-{#                                <p class="p-lg">Aliquam vitae molestie at quisque sapien volutpat and justo, aliquet#}
-{#                                    molestie purus#}
-{#                                    efficitur ipsum#}
-{#                                </p>#}
-{#                            </li>#}
-{#                            <li class="list-item">#}
-{#                                <p class="p-lg">Sagittis congue augue magna risus mauris volutpat and egestas magna#}
-{#                                    suscipit egestas a#}
-{#                                    vitae purus#}
-{#                                </p>#}
-{#                            </li>#}
-{#                        </ul>#}
                     </div>
                 </div>
             </div>    <!-- End row -->
@@ -159,75 +142,6 @@
     {% include '@Twig/include/price.html.twig' %}
 
     {% include '@Twig/include/promotion.html.twig' %}
-
-{#    <!-- PROMOTIONS -->#}
-{#    <section id="promo-2" class="pt-100 promo-section division">#}
-{#        <div class="container">#}
-{#            <!-- SECTION TITLE -->#}
-{#            <div class="row justify-content-center">#}
-{#                <div class="col-lg-10 col-xl-8">#}
-{#                    <div class="section-title title-01 mb-70">#}
-{#                        <!-- Section ID -->#}
-{#                        <span class="section-id">Nails And Beyond…</span>#}
-{#                        <!-- Title -->#}
-{#                        <h2 class="h2-lg">Nails For Every Budget</h2>#}
-{#                    </div>#}
-{#                </div>#}
-{#            </div>#}
-{#            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">#}
-{#                <!-- PROMO BOX #1 -->#}
-{#                <div class="col align-self-end wow fadeInUp" data-wow-delay="0.3s">#}
-{#                    <a href="pricing.html">#}
-{#                        <div id="pb-2-1" class="promo-box">#}
-{#                            <!-- Text -->#}
-{#                            <div class="promo-box-txt mb-30">#}
-{#                                <p class="txt-upcase">From 09.11.21 To 23.11.21</p>#}
-{#                                <h5 class="h5-xl">30% OFF on Classic Manicure & Pedicure</h5>#}
-{#                            </div>#}
-{#                            <!-- Image -->#}
-{#                            <div class="promo-box-img">#}
-{#                                <div class="hover-overlay">#}
-{#                                    <img class="img-fluid" src="/assets/images/promo-05.jpg" alt="promo-image"/>#}
-{#                                    <div class="item-overlay"></div>#}
-{#                                </div>#}
-{#                            </div>#}
-{#                        </div>#}
-{#                    </a>#}
-{#                </div>#}
-{#                <!-- PROMO BOX #2 -->#}
-{#                <div id="promo-2-img" class="col wow fadeInUp" data-wow-delay="0.6s">#}
-{#                    <a href="pricing.html">#}
-{#                        <div id="pb-2-2" class="promo-box">#}
-{#                            <div class="hover-overlay">#}
-{#                                <img class="img-fluid" src="/assets/images/promo-06.jpg" alt="promo-image"/>#}
-{#                                <div class="item-overlay"></div>#}
-{#                            </div>#}
-{#                        </div>#}
-{#                    </a>#}
-{#                </div>#}
-{#                <!-- PROMO BOX #3 -->#}
-{#                <div class="col align-self-start wow fadeInUp" data-wow-delay="0.9s">#}
-{#                    <a href="pricing.html">#}
-{#                        <div id="pb-2-3" class="promo-box">#}
-{#                            <!-- Image -->#}
-{#                            <div class="promo-box-img">#}
-{#                                <div class="hover-overlay">#}
-{#                                    <img class="img-fluid" src="/assets/images/promo-07.jpg" alt="promo-image"/>#}
-{#                                    <div class="item-overlay"></div>#}
-{#                                </div>#}
-{#                            </div>#}
-{#                            <!-- Text -->#}
-{#                            <div class="promo-box-txt mt-30">#}
-{#                                <p class="txt-upcase">All Autumn Long!</p>#}
-{#                                <h5 class="h5-xl">Prices Reduced On Spa Procedures UP TO 30%</h5>#}
-{#                            </div>#}
-{#                        </div>#}
-{#                    </a>#}
-{#                </div>#}
-{#            </div>    <!-- End row -->#}
-{#        </div>       <!-- End container -->#}
-{#    </section>#}
-{#    <!-- END PROMOTIONS-2 -->#}
 
     <!-- BRANDS-1
     ============================================= -->
@@ -341,11 +255,10 @@
                     <!-- Title -->
                     <h3 class="h3-xs">Working Hours</h3>
                     <!-- Text -->
-                    <p class="p-lg">Gravida porta vitae auctor congue magna impedit ligula and risus mauris donec
-                        ligula magnis
-                        aliqum mullam and primis risus undo donec luctus neque feugiat suscipit risus auctor egestas
-                        an augue mauri
-                        ligula magnis aliqum sapien vitae nemo egestas
+                    <p class="p-lg">Relax your mind and body, while we indulge your soul with our selection of luxurious
+                        spa packages. We offer a wide variety of spa services to meet all of your needs. Spa services
+                        include, massages, Registered Massage Therapy (RMT), facials, manicures, pedicures, waxing, body
+                        treatments, spa packages, couples spa packages and more.
                     </p>
                 </div>
             </div>    <!-- END TEXT BLOCK -->
@@ -369,7 +282,8 @@
                             <!-- Link -->
                             <h2 class="h2-xl"><a href="#">@Shades Spa</a></h2>
                             <!-- Button -->
-                            <a href="{{ url('gallery') }}" class="btn violet-red--btn tra-black--hover">View Our Gallery</a>
+                            <a href="{{ url('gallery') }}" class="btn violet-red--btn tra-black--hover">View Our
+                                Gallery</a>
                         </div>
                     </div>
                 </div>
@@ -384,7 +298,6 @@
                             <!-- Title -->
                             <h2>Gift <span>Cards</span></h2>
                             <!-- Button -->
-{#                            <a href="gift-cards.html" class="btn violet-red--btn tra-white--hover">Find Out More</a>#}
                         </div>
                     </div>
                 </div>
@@ -403,7 +316,7 @@
                 <div class="col-lg-10 col-xl-8">
                     <div class="section-title title-01 mb-50">
                         <!-- Section ID -->
-                        <span class="section-id">Connect with La Notte</span>
+                        <span class="section-id">Connect with Shades Spa</span>
 
                         <!-- Title -->
                         <h2 class="h2-lg">Join Our Newsletter</h2>
@@ -425,8 +338,9 @@
                         </div>
                         <!-- Small Text -->
                         <p class="p-md">By signing and clicking Submit, you affirm you have read and agree to the
-                            <a href="#" class="black--color">Privacy Policy</a> and <a href="#"
-                                                                                       class="black--color">Terms of
+                            <a href="{{ url('privacy') }}" class="black--color">Privacy Policy</a> and <a
+                                    href="{{ url('terms') }}"
+                                    class="black--color">Terms of
                                 Use</a>,
                             and want to receive news.
                         </p>
@@ -440,20 +354,20 @@
     </div>       <!-- End container -->
 </section>    <!-- END NEWSLETTER-1 -->
 
-<!-- Google Analytics: Change UA-XXXXX-X to be your site's ID. Go to http://www.google.com/analytics/ for more information. -->
-<!--
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GSP8QRS9KM"></script>
 <script>
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-XXXXX-X']);
-    _gaq.push(['_trackPageview']);
+    window.dataLayer = window.dataLayer || [];
 
-    (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-GSP8QRS9KM');
 </script>
--->
+
 </body>
 {% include '@Twig/include/footer.html.twig' %}
 

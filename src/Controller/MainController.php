@@ -38,7 +38,9 @@ class MainController extends AbstractController
     #[Route ('/about', name: 'about')]
     public function about(): Response
     {
-        return $this->render('@Twig/main/about.html.twig');
+        return $this->render('@Twig/main/about.html.twig', [
+            'images' => $this->galleryService->getImages(6),
+        ]);
     }
 
     #[Route ('/team', name: 'team')]
@@ -67,5 +69,17 @@ class MainController extends AbstractController
         return $this->render('@Twig/main/gallery.html.twig', [
             'images' => $this->galleryService->getImages()
         ]);
+    }
+
+    #[Route ('/privacy', name: 'privacy')]
+    public function privacy(): Response
+    {
+        return $this->render('@Twig/main/privacy.html.twig');
+    }
+
+    #[Route ('/terms', name: 'terms')]
+    public function terms(): Response
+    {
+        return $this->render('@Twig/main/terms.html.twig');
     }
 }
