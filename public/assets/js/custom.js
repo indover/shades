@@ -242,34 +242,34 @@
 		/*	Video Link #2 Lightbox
 		/*----------------------------------------------------*/
 		
-		$('.video-popup2').magnificPopup({
-		    type: 'iframe',		  	  
-				iframe: {
-					patterns: {
-						youtube: {			   
-							index: 'youtube.com',
-							src: 'https://www.youtube.com/embed/7e90gBu4pas'				
-								}
-							}
-						}		  		  
-		});
+		// $('.video-popup2').magnificPopup({
+		//     type: 'iframe',
+		// 		iframe: {
+		// 			patterns: {
+		// 				youtube: {
+		// 					index: 'youtube.com',
+		// 					src: 'https://www.youtube.com/embed/7e90gBu4pas'
+		// 						}
+		// 					}
+		// 				}
+		// });
 
 
 		/*----------------------------------------------------*/
 		/*	Video Link #3 Lightbox
 		/*----------------------------------------------------*/
 		
-		$('.video-popup3').magnificPopup({
-		    type: 'iframe',		  	  
-				iframe: {
-					patterns: {
-						youtube: {			   
-							index: 'youtube.com',
-							src: 'https://www.youtube.com/embed/0gv7OC9L2s8'					
-								}
-							}
-						}		  		  
-		});
+		// $('.video-popup3').magnificPopup({
+		//     type: 'iframe',
+		// 		iframe: {
+		// 			patterns: {
+		// 				youtube: {
+		// 					index: 'youtube.com',
+		// 					src: 'https://www.youtube.com/embed/0gv7OC9L2s8'
+		// 						}
+		// 					}
+		// 				}
+		// });
 
 
 		/*----------------------------------------------------*/
@@ -499,7 +499,7 @@
 	
 		$('.newsletter-form').ajaxChimp({
         language: 'cm',
-        url: 'https://dsathemes.us3.list-manage.com/subscribe/post?u=af1a6c0b23340d7b339c085b4&id=344a494a6e'
+        url: 'https://'
             //http://xxx.xxx.list-manage.com/subscribe/post?u=xxx&id=xxx
 		});
 
