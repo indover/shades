@@ -59,7 +59,9 @@
                                             </div>
                                             <!-- Description -->
                                             <div class="price-txt">
-                                                <p class="p-md"><em>Service length {{ service.length }} minutes</em></p>
+                                                {% if service.length is not null %}
+                                                    <p class="p-md"><em>Service length {{ service.length }} minutes</em></p>
+                                                {% endif %}
                                             </div>
                                         </li>
                                     </ul>    <!-- END PRICING LIST -->
