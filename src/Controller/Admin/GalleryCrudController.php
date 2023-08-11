@@ -21,7 +21,7 @@ class GalleryCrudController extends AbstractCrudController
     {
         return [
             IdField::new('id')->hideOnIndex()->hideOnForm(),
-            ImageField::new('image')->setBasePath('/gallery/images')->setUploadDir('/public/gallery/images'),
+            ImageField::new('image')->setBasePath('/folder/images')->setUploadDir('/public/folder/images'),
             TextField::new('title'),
             TextField::new('text')
         ];
