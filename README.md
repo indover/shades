@@ -1,1 +1,1 @@
-[www.shadespa.ca](http://shadesspa.com)
+[www.shadesspa.com](http://shadesspa.com)
